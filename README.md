@@ -1,4 +1,4 @@
-<h1>Laravel REST api CRUD example</h1>
+<h1>Laravel (v10) REST api CRUD example</h1>
 
 <h3>Create a new laravel project using composer:</h3>
 
