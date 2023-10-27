@@ -102,8 +102,8 @@ Go to the ProductController file add these functions for CRUD
         }
     }
 </code>
-CREATE THE ROUTES
-Routing is a way to generate your REST api web application’s request endpoint URL.
+<h3>Create the routes</h3>
+<p>Routing is a way to generate your REST api web application’s request endpoint URL.</p>
 File location (routes/api.php)
 
 <code>
