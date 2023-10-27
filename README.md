@@ -1,10 +1,26 @@
 <h1>Laravel (v10) REST api CRUD example</h1>
 
-<h3>Create a new laravel project using composer:</h3>
+
+<h2>Clone instruction:</h2>
+Run <code>git clone 'link projer github'</code>
+Run <code>composer install</code>
+<p>Edit your database path in .env file after below step</p>
+Run <code>cp .env.example .env or copy .env.example .env</code> 
+Run <code>php artisan key:generate</code>
+Run <code>php artisan migrate</code>
+Run <code>php artisan db:seed</code>
+Run <code>php artisan serve</code>
+
+<b>TEST using postman or other rest client app</b>
+
+
+
+<h2>Instruction for creating Fresh project<h2>
+<b>Create a new laravel project using composer:</b>
 
 <code>composer create-project laravel/laravel example-app</code>
 
-<h3>Open the project using VS code editor and run the </h3>
+<b>Open the project using VS code editor and run the </b>
 <code>$ php artisan serve</code>
 
 <p>for checking laravel server running properly</p>
