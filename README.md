@@ -3,10 +3,8 @@
 
 <h2>Clone instruction:</h2>
 <ul>
-    
-
-<li>Run <code>git clone 'link projer github'</code></li>
-<li>Run <code>composer install</code>
+<li>Run <code>git clone https://github.com/raikk/nielit-php-course-rest-api-crud-eg1.git</code></li>
+<li>Run <code>composer install</code></li>
 <li><p>Edit your database path in .env file after below step</p>
 Run <code>cp .env.example .env or copy .env.example .env</code> </li>
 <li>Run <code>php artisan key:generate</code></li>
