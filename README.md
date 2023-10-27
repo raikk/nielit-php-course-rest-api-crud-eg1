@@ -2,7 +2,7 @@
 
 <h3>Create a new laravel project using composer:</h3>
 
-<code>$composer create-project laravel/laravel example-app</code>
+<code>composer create-project laravel/laravel example-app</code>
 
 <h3>Open the project using VS code editor and run the </h3>
 <code>$ php artisan serve</code>
@@ -29,27 +29,28 @@ Create a table called PRODUCTS
 
 it will create new migration file, add the these fields in that migration file
 
+<code>
 $table->string('product_name', 255)->nullable();
 $table->string('price', 255)->nullable();
 $table->text('details')->nullable();
-
+</code>
 run the migration file 
-File location (database/migrations/xxxxxx_create_products_table)
-php artisan migrate
+File location <code>(database/migrations/xxxxxx_create_products_table)</code>
+<code>php artisan migrate</code>
 
 
 Make a model file 
-php artisan make:model Products
-File location (app/models/Products.php)
+<code>php artisan make:model Products</code>
+File location <code>(app/models/Products.php)</code>
 
 
 Create a Controller file
-file location (pp/Http/Controllers)
+file location <code>(pp/Http/Controllers)</code>
 
-php artisan make:controller ProductController
+<code>php artisan make:controller ProductController</code>
 
 Go to the ProductController file add these functions for CRUD
-
+<code>
  //To get all the Product list from the database
     public function index(){
         $products = Products::all();
@@ -100,17 +101,18 @@ Go to the ProductController file add these functions for CRUD
             return response()->json(["message"=> "Product not found"], 404);
         }
     }
-
+</code>
 CREATE THE ROUTES
 Routing is a way to generate your REST api web application’s request endpoint URL.
 File location (routes/api.php)
 
+<code>
 Route::get('/products', [ProductController::class,'index']);
 Route::get('/products/{id}', [ProductController::class,'displayByid']);
 Route::post('/products', [ProductController::class,'addNew']);
 Route::put('/products/{id}', [ProductController::class,'updateProduct']);
 Route::delete('/products/{id}', [ProductController::class,'deleteProduct']);
 
-
+</code>
 
 TEST THE REST API USING POSTMAN OR other REST CLIENT APP
