@@ -51,13 +51,13 @@ file location <code>(pp/Http/Controllers)</code>
 
 Go to the ProductController file add these functions for CRUD
 <code>
- //To get all the Product list from the database
+
     public function index(){
         $products = Products::all();
         //response in JSON format
         return response()->json($products);
     }
-    //To add new product in database 
+
     public function addNew(Request $request){
         $product = new Products();
         $product->product_name = $request->product_name;
@@ -67,7 +67,7 @@ Go to the ProductController file add these functions for CRUD
         return response()->json(["message"=>"New Product added successfully"], 201);
     }
 
-    //To display particular product by passing ID
+
     public function displayByid($id){
         $product = Products::find($id);
         if(!empty($product)){
@@ -77,7 +77,7 @@ Go to the ProductController file add these functions for CRUD
         }
     }
 
-    //To update particular product 
+  
     public function updateProduct(Request $request, $id){
         if(Products::where("id", $id)->exists()){
             $product = Products::find($id);
