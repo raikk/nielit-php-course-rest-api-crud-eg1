@@ -2,15 +2,18 @@
 
 
 <h2>Clone instruction:</h2>
-Run <code>git clone 'link projer github'</code>
-Run <code>composer install</code>
-<p>Edit your database path in .env file after below step</p>
-Run <code>cp .env.example .env or copy .env.example .env</code> 
-Run <code>php artisan key:generate</code>
-Run <code>php artisan migrate</code>
-Run <code>php artisan db:seed</code>
-Run <code>php artisan serve</code>
+<ul>
+    
 
+<li>Run <code>git clone 'link projer github'</code></li>
+<li>Run <code>composer install</code>
+<li><p>Edit your database path in .env file after below step</p>
+Run <code>cp .env.example .env or copy .env.example .env</code> </li>
+<li>Run <code>php artisan key:generate</code></li>
+<li>Run <code>php artisan migrate</code></li>
+<li>Run <code>php artisan db:seed</code></li>
+<li>Run <code>php artisan serve</code></li>
+</ul>
 <b>TEST using postman or other rest client app</b>
 
 
